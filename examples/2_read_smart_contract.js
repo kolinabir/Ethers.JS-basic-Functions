@@ -1,8 +1,8 @@
 const { ethers } = require("ethers");
 
-const INFURA_ID = "9ce5f9f9ea7a4515ad42cf940293a532";
+const INFURA_ID = process.env.INFURA_ID;
 const provider = new ethers.providers.JsonRpcProvider(
-  `https://mainnet.infura.io/v3/${INFURA_ID}`
+  `https://sepolia.infura.io/v3/${INFURA_ID}`
 );
 
 const ERC20_ABI = [
